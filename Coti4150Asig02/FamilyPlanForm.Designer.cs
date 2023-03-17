@@ -1,6 +1,6 @@
 ﻿namespace Coti4150Asig02
 {
-    partial class IndividualPlanForm
+    partial class FamilyPlanForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(IndividualPlanForm));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FamilyPlanForm));
             this.grpSelectModel = new System.Windows.Forms.GroupBox();
             this.rdoModel200 = new System.Windows.Forms.RadioButton();
             this.rdoModel110 = new System.Windows.Forms.RadioButton();
@@ -56,6 +56,8 @@
             this.picIndividual = new System.Windows.Forms.PictureBox();
             this.btnViewTotals = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
+            this.lblNumberPhones = new System.Windows.Forms.Label();
+            this.cboNumberPhones = new System.Windows.Forms.ComboBox();
             this.grpSelectModel.SuspendLayout();
             this.grpSelectPackage.SuspendLayout();
             this.grpSelectOptions.SuspendLayout();
@@ -68,7 +70,7 @@
             this.grpSelectModel.Controls.Add(this.rdoModel200);
             this.grpSelectModel.Controls.Add(this.rdoModel110);
             this.grpSelectModel.Controls.Add(this.rdoModel100);
-            this.grpSelectModel.Location = new System.Drawing.Point(12, 12);
+            this.grpSelectModel.Location = new System.Drawing.Point(14, 62);
             this.grpSelectModel.Name = "grpSelectModel";
             this.grpSelectModel.Size = new System.Drawing.Size(157, 100);
             this.grpSelectModel.TabIndex = 0;
@@ -86,7 +88,6 @@
             this.rdoModel200.TabStop = true;
             this.rdoModel200.Text = "Model 200";
             this.rdoModel200.UseVisualStyleBackColor = true;
-            this.rdoModel200.CheckedChanged += new System.EventHandler(this.rdoModel200_CheckedChanged);
             // 
             // rdoModel110
             // 
@@ -97,7 +98,6 @@
             this.rdoModel110.TabIndex = 1;
             this.rdoModel110.Text = "Model 110";
             this.rdoModel110.UseVisualStyleBackColor = true;
-            this.rdoModel110.CheckedChanged += new System.EventHandler(this.rdoModel110_CheckedChanged);
             // 
             // rdoModel100
             // 
@@ -108,14 +108,13 @@
             this.rdoModel100.TabIndex = 0;
             this.rdoModel100.Text = "Model 100";
             this.rdoModel100.UseVisualStyleBackColor = true;
-            this.rdoModel100.CheckedChanged += new System.EventHandler(this.rdoModel100_CheckedChanged);
             // 
             // grpSelectPackage
             // 
             this.grpSelectPackage.Controls.Add(this.rdoUnlimited);
             this.grpSelectPackage.Controls.Add(this.rdo1500Minutes);
             this.grpSelectPackage.Controls.Add(this.rdo800Minutes);
-            this.grpSelectPackage.Location = new System.Drawing.Point(184, 12);
+            this.grpSelectPackage.Location = new System.Drawing.Point(186, 62);
             this.grpSelectPackage.Name = "grpSelectPackage";
             this.grpSelectPackage.Size = new System.Drawing.Size(274, 100);
             this.grpSelectPackage.TabIndex = 1;
@@ -132,7 +131,6 @@
             this.rdoUnlimited.TabStop = true;
             this.rdoUnlimited.Text = "Unlimited Minutes";
             this.rdoUnlimited.UseVisualStyleBackColor = true;
-            this.rdoUnlimited.CheckedChanged += new System.EventHandler(this.rdoUnlimited_CheckedChanged);
             // 
             // rdo1500Minutes
             // 
@@ -145,7 +143,6 @@
             this.rdo1500Minutes.TabStop = true;
             this.rdo1500Minutes.Text = "1500 Minutes/Month";
             this.rdo1500Minutes.UseVisualStyleBackColor = true;
-            this.rdo1500Minutes.CheckedChanged += new System.EventHandler(this.rdo1500Minutes_CheckedChanged);
             // 
             // rdo800Minutes
             // 
@@ -156,13 +153,12 @@
             this.rdo800Minutes.TabIndex = 0;
             this.rdo800Minutes.Text = "800 Minutes/Month";
             this.rdo800Minutes.UseVisualStyleBackColor = true;
-            this.rdo800Minutes.CheckedChanged += new System.EventHandler(this.rdo800Minutes_CheckedChanged);
             // 
             // grpSelectOptions
             // 
             this.grpSelectOptions.Controls.Add(this.chkTextMessaging);
             this.grpSelectOptions.Controls.Add(this.chkEmail);
-            this.grpSelectOptions.Location = new System.Drawing.Point(12, 127);
+            this.grpSelectOptions.Location = new System.Drawing.Point(14, 177);
             this.grpSelectOptions.Name = "grpSelectOptions";
             this.grpSelectOptions.Size = new System.Drawing.Size(157, 100);
             this.grpSelectOptions.TabIndex = 2;
@@ -180,7 +176,6 @@
             this.chkTextMessaging.TabIndex = 1;
             this.chkTextMessaging.Text = "Text Messaging";
             this.chkTextMessaging.UseVisualStyleBackColor = true;
-            this.chkTextMessaging.CheckedChanged += new System.EventHandler(this.chkTextMessaging_CheckedChanged);
             // 
             // chkEmail
             // 
@@ -193,7 +188,6 @@
             this.chkEmail.TabIndex = 0;
             this.chkEmail.Text = "Email";
             this.chkEmail.UseVisualStyleBackColor = true;
-            this.chkEmail.CheckedChanged += new System.EventHandler(this.chkEmail_CheckedChanged);
             // 
             // grpTotals
             // 
@@ -209,7 +203,7 @@
             this.grpTotals.Controls.Add(this.lblTax);
             this.grpTotals.Controls.Add(this.txtPhoneSubtotal);
             this.grpTotals.Controls.Add(this.lblPhoneSubtotal);
-            this.grpTotals.Location = new System.Drawing.Point(184, 127);
+            this.grpTotals.Location = new System.Drawing.Point(186, 177);
             this.grpTotals.Name = "grpTotals";
             this.grpTotals.Size = new System.Drawing.Size(274, 213);
             this.grpTotals.TabIndex = 3;
@@ -333,7 +327,7 @@
             // picIndividual
             // 
             this.picIndividual.Image = ((System.Drawing.Image)(resources.GetObject("picIndividual.Image")));
-            this.picIndividual.Location = new System.Drawing.Point(23, 236);
+            this.picIndividual.Location = new System.Drawing.Point(25, 286);
             this.picIndividual.Name = "picIndividual";
             this.picIndividual.Size = new System.Drawing.Size(117, 66);
             this.picIndividual.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -342,17 +336,16 @@
             // 
             // btnViewTotals
             // 
-            this.btnViewTotals.Location = new System.Drawing.Point(32, 330);
+            this.btnViewTotals.Location = new System.Drawing.Point(34, 380);
             this.btnViewTotals.Name = "btnViewTotals";
             this.btnViewTotals.Size = new System.Drawing.Size(75, 23);
             this.btnViewTotals.TabIndex = 5;
             this.btnViewTotals.Text = "View Totals";
             this.btnViewTotals.UseVisualStyleBackColor = true;
-            this.btnViewTotals.Click += new System.EventHandler(this.btnViewTotals_Click);
             // 
             // btnClose
             // 
-            this.btnClose.Location = new System.Drawing.Point(32, 359);
+            this.btnClose.Location = new System.Drawing.Point(34, 409);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(75, 23);
             this.btnClose.TabIndex = 6;
@@ -360,11 +353,41 @@
             this.btnClose.UseVisualStyleBackColor = true;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
-            // IndividualPlanForm
+            // lblNumberPhones
+            // 
+            this.lblNumberPhones.AutoSize = true;
+            this.lblNumberPhones.Location = new System.Drawing.Point(14, 23);
+            this.lblNumberPhones.Name = "lblNumberPhones";
+            this.lblNumberPhones.Size = new System.Drawing.Size(110, 15);
+            this.lblNumberPhones.TabIndex = 0;
+            this.lblNumberPhones.Text = "Number of Phones:";
+            this.lblNumberPhones.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // cboNumberPhones
+            // 
+            this.cboNumberPhones.AllowDrop = true;
+            this.cboNumberPhones.DisplayMember = "4";
+            this.cboNumberPhones.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboNumberPhones.FormattingEnabled = true;
+            this.cboNumberPhones.Items.AddRange(new object[] {
+            "2",
+            "3",
+            "4",
+            "5",
+            "6"});
+            this.cboNumberPhones.Location = new System.Drawing.Point(138, 23);
+            this.cboNumberPhones.MinimumSize = new System.Drawing.Size(2, 0);
+            this.cboNumberPhones.Name = "cboNumberPhones";
+            this.cboNumberPhones.Size = new System.Drawing.Size(49, 23);
+            this.cboNumberPhones.TabIndex = 7;
+            // 
+            // FamilyPlanForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(473, 393);
+            this.ClientSize = new System.Drawing.Size(473, 445);
+            this.Controls.Add(this.cboNumberPhones);
+            this.Controls.Add(this.lblNumberPhones);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnViewTotals);
             this.Controls.Add(this.picIndividual);
@@ -372,8 +395,8 @@
             this.Controls.Add(this.grpSelectOptions);
             this.Controls.Add(this.grpSelectPackage);
             this.Controls.Add(this.grpSelectModel);
-            this.Name = "IndividualPlanForm";
-            this.Text = "Individual Plan";
+            this.Name = "FamilyPlanForm";
+            this.Text = "Family Plan";
             this.grpSelectModel.ResumeLayout(false);
             this.grpSelectModel.PerformLayout();
             this.grpSelectPackage.ResumeLayout(false);
@@ -384,6 +407,7 @@
             this.grpTotals.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picIndividual)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -416,5 +440,7 @@
         private PictureBox picIndividual;
         private Button btnViewTotals;
         private Button btnClose;
+        private Label lblNumberPhones;
+        private ComboBox cboNumberPhones;
     }
 }

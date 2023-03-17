@@ -78,6 +78,7 @@
             this.btnFamily.Text = "&Family";
             this.btnFamily.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnFamily.UseVisualStyleBackColor = true;
+            this.btnFamily.Click += new System.EventHandler(this.btnFamily_Click);
             // 
             // lblFamily
             // 
@@ -109,6 +110,7 @@
             this.btnIndividual.Text = "&Individual";
             this.btnIndividual.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnIndividual.UseVisualStyleBackColor = true;
+            this.btnIndividual.Click += new System.EventHandler(this.btnIndividual_Click);
             // 
             // lblIndividual
             // 

@@ -11,5 +11,15 @@ namespace Coti4150Asig02
         {
             Application.Exit();
         }
+
+        private void btnIndividual_Click(object sender, EventArgs e)
+        {
+            new IndividualPlanForm().Show();
+        }
+
+        private void btnFamily_Click(object sender, EventArgs e)
+        {
+            new FamilyPlanForm().Show();
+        }
     }
 }
