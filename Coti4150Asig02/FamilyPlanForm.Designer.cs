@@ -374,8 +374,7 @@
             "2",
             "3",
             "4",
-            "5",
-            "6"});
+            "5"});
             this.cboNumberPhones.Location = new System.Drawing.Point(138, 23);
             this.cboNumberPhones.MinimumSize = new System.Drawing.Size(2, 0);
             this.cboNumberPhones.Name = "cboNumberPhones";
