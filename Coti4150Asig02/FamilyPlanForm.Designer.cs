@@ -342,6 +342,7 @@
             this.btnViewTotals.TabIndex = 5;
             this.btnViewTotals.Text = "View Totals";
             this.btnViewTotals.UseVisualStyleBackColor = true;
+            this.btnViewTotals.Click += new System.EventHandler(this.btnViewTotals_Click);
             // 
             // btnClose
             // 

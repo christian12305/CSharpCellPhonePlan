@@ -86,7 +86,6 @@
             this.rdoModel200.TabStop = true;
             this.rdoModel200.Text = "Model 200";
             this.rdoModel200.UseVisualStyleBackColor = true;
-            this.rdoModel200.CheckedChanged += new System.EventHandler(this.rdoModel200_CheckedChanged);
             // 
             // rdoModel110
             // 
@@ -97,7 +96,6 @@
             this.rdoModel110.TabIndex = 1;
             this.rdoModel110.Text = "Model 110";
             this.rdoModel110.UseVisualStyleBackColor = true;
-            this.rdoModel110.CheckedChanged += new System.EventHandler(this.rdoModel110_CheckedChanged);
             // 
             // rdoModel100
             // 
@@ -108,7 +106,6 @@
             this.rdoModel100.TabIndex = 0;
             this.rdoModel100.Text = "Model 100";
             this.rdoModel100.UseVisualStyleBackColor = true;
-            this.rdoModel100.CheckedChanged += new System.EventHandler(this.rdoModel100_CheckedChanged);
             // 
             // grpSelectPackage
             // 
@@ -132,7 +129,6 @@
             this.rdoUnlimited.TabStop = true;
             this.rdoUnlimited.Text = "Unlimited Minutes";
             this.rdoUnlimited.UseVisualStyleBackColor = true;
-            this.rdoUnlimited.CheckedChanged += new System.EventHandler(this.rdoUnlimited_CheckedChanged);
             // 
             // rdo1500Minutes
             // 
@@ -145,7 +141,6 @@
             this.rdo1500Minutes.TabStop = true;
             this.rdo1500Minutes.Text = "1500 Minutes/Month";
             this.rdo1500Minutes.UseVisualStyleBackColor = true;
-            this.rdo1500Minutes.CheckedChanged += new System.EventHandler(this.rdo1500Minutes_CheckedChanged);
             // 
             // rdo800Minutes
             // 
@@ -156,7 +151,6 @@
             this.rdo800Minutes.TabIndex = 0;
             this.rdo800Minutes.Text = "800 Minutes/Month";
             this.rdo800Minutes.UseVisualStyleBackColor = true;
-            this.rdo800Minutes.CheckedChanged += new System.EventHandler(this.rdo800Minutes_CheckedChanged);
             // 
             // grpSelectOptions
             // 
@@ -180,7 +174,6 @@
             this.chkTextMessaging.TabIndex = 1;
             this.chkTextMessaging.Text = "Text Messaging";
             this.chkTextMessaging.UseVisualStyleBackColor = true;
-            this.chkTextMessaging.CheckedChanged += new System.EventHandler(this.chkTextMessaging_CheckedChanged);
             // 
             // chkEmail
             // 
@@ -193,7 +186,6 @@
             this.chkEmail.TabIndex = 0;
             this.chkEmail.Text = "Email";
             this.chkEmail.UseVisualStyleBackColor = true;
-            this.chkEmail.CheckedChanged += new System.EventHandler(this.chkEmail_CheckedChanged);
             // 
             // grpTotals
             // 
