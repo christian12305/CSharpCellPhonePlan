@@ -1,4 +1,12 @@
-﻿using System;
+﻿/*
+ * File: IndividualPlanForm.cs
+ * Author: Christian J. Ramos Ortega 841-18-4582
+ * Course: COTI 4150-KJ1 Prof. Antonio F. Huertas
+ * Date: 03/22/2023
+ * Purpose: This form asks the user for a model of a cellphone, a package of minutes,
+ *          and a few options to calculate the monthly charge to the client.      
+ */
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -30,11 +38,18 @@ namespace Coti4150Asig02
 
             taxCharge(out decimal taxCost, phoneCost);
 
+            totalPhoneCalc(out decimal phoneTotal, phoneCost, taxCost);
+
+            updateValues(phoneCost, packageCost, optionsCost, monthlyCost, taxCost, phoneTotal);
+
+        }
+
+        //Updates the resulting values. 
+        private void updateValues(decimal phoneCost, decimal packageCost, decimal optionsCost, decimal monthlyCost, decimal taxCost, decimal phoneTotal)
+        {
             txtPhoneSubtotal.Text = phoneCost.ToString("c");
 
             txtTax.Text = taxCost.ToString("c");
-
-            totalPhoneCalc(out decimal phoneTotal, phoneCost, taxCost);
 
             txtPhoneTotal.Text = phoneTotal.ToString("c");
 
@@ -43,7 +58,6 @@ namespace Coti4150Asig02
             txtPackageCharge.Text = packageCost.ToString("c");
 
             txtTotalMonthlyCharge.Text = monthlyCost.ToString("c");
-
         }
 
         //Calculates the total phone cost
