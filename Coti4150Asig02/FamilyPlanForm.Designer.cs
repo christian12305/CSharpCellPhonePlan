@@ -383,8 +383,10 @@
             // 
             // FamilyPlanForm
             // 
+            this.AcceptButton = this.btnViewTotals;
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.CancelButton = this.btnClose;
             this.ClientSize = new System.Drawing.Size(473, 445);
             this.Controls.Add(this.cboNumberPhones);
             this.Controls.Add(this.lblNumberPhones);
@@ -396,6 +398,7 @@
             this.Controls.Add(this.grpSelectPackage);
             this.Controls.Add(this.grpSelectModel);
             this.Name = "FamilyPlanForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Family Plan";
             this.grpSelectModel.ResumeLayout(false);
             this.grpSelectModel.PerformLayout();

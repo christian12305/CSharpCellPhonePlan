@@ -362,8 +362,10 @@
             // 
             // IndividualPlanForm
             // 
+            this.AcceptButton = this.btnViewTotals;
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.CancelButton = this.btnClose;
             this.ClientSize = new System.Drawing.Size(473, 393);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnViewTotals);
@@ -373,6 +375,7 @@
             this.Controls.Add(this.grpSelectPackage);
             this.Controls.Add(this.grpSelectModel);
             this.Name = "IndividualPlanForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Individual Plan";
             this.grpSelectModel.ResumeLayout(false);
             this.grpSelectModel.PerformLayout();
