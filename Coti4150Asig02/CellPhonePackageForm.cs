@@ -15,16 +15,19 @@ namespace Coti4150Asig02
             InitializeComponent();
         }
 
+        //Event handler for the exit button
         private void btnExit_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
 
+        //Event handler for the individual button
         private void btnIndividual_Click(object sender, EventArgs e)
         {
             new IndividualPlanForm().Show();
         }
 
+        //Event handlr for the family button
         private void btnFamily_Click(object sender, EventArgs e)
         {
             new FamilyPlanForm().Show();

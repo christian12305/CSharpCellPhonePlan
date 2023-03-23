@@ -63,24 +63,15 @@ namespace Coti4150Asig02
         }
 
         //Calculates the total phone cost
-        private void totalPhoneCalc(out decimal phoneTotal, decimal phoneCost, decimal taxCost)
-        {
-            phoneTotal = phoneCost + taxCost;
-        }
+        private void totalPhoneCalc(out decimal phoneTotal, decimal phoneCost, decimal taxCost) => phoneTotal = phoneCost + taxCost;
+        
 
         //Calculate the 11.5% tax 
-        private void taxCharge(out decimal taxCost, decimal phoneCost)
-        {
-            decimal salesTax = 0.115m;
-
-            taxCost = phoneCost * salesTax;
-        }
+        private void taxCharge(out decimal taxCost, decimal phoneCost) => taxCost = phoneCost * 0.115m;
 
         //Calculate the monthly charge.
-        private void monthlyCharge(out decimal monthlyCost, decimal packageCost, decimal optionsCost)
-        {
-            monthlyCost = packageCost + optionsCost;
-        }
+        private void monthlyCharge(out decimal monthlyCost, decimal packageCost, decimal optionsCost) => monthlyCost = packageCost + optionsCost;
+        
 
         //Method to store the options cost.
         private void optionsChosen(out decimal optionsCost)
