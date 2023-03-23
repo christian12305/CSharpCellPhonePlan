@@ -375,10 +375,10 @@
             "3",
             "4",
             "5"});
-            this.cboNumberPhones.Location = new System.Drawing.Point(138, 23);
+            this.cboNumberPhones.Location = new System.Drawing.Point(130, 20);
             this.cboNumberPhones.MinimumSize = new System.Drawing.Size(2, 0);
             this.cboNumberPhones.Name = "cboNumberPhones";
-            this.cboNumberPhones.Size = new System.Drawing.Size(49, 23);
+            this.cboNumberPhones.Size = new System.Drawing.Size(43, 23);
             this.cboNumberPhones.TabIndex = 7;
             // 
             // FamilyPlanForm
@@ -400,6 +400,7 @@
             this.Name = "FamilyPlanForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Family Plan";
+            this.Load += new System.EventHandler(this.FamilyPlanForm_Load);
             this.grpSelectModel.ResumeLayout(false);
             this.grpSelectModel.PerformLayout();
             this.grpSelectPackage.ResumeLayout(false);

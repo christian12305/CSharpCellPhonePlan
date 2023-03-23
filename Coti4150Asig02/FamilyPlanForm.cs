@@ -127,5 +127,10 @@ namespace Coti4150Asig02
         {
             this.Close();
         }
+
+        private void FamilyPlanForm_Load(object sender, EventArgs e)
+        {
+            cboNumberPhones.SelectedIndex = 2;
+        }
     }
 }
