@@ -380,6 +380,9 @@
             this.cboNumberPhones.Name = "cboNumberPhones";
             this.cboNumberPhones.Size = new System.Drawing.Size(43, 23);
             this.cboNumberPhones.TabIndex = 7;
+            this.cboNumberPhones.SelectedIndexChanged += new System.EventHandler(this.inputChanged);
+            this.cboNumberPhones.DropDownStyleChanged += new System.EventHandler(this.inputChanged);
+            this.cboNumberPhones.ContextMenuStripChanged += new System.EventHandler(this.inputChanged);
             // 
             // FamilyPlanForm
             // 
