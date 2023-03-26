@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FamilyPlanForm));
             this.grpSelectModel = new System.Windows.Forms.GroupBox();
             this.rdoModel200 = new System.Windows.Forms.RadioButton();
@@ -58,6 +59,7 @@
             this.btnClose = new System.Windows.Forms.Button();
             this.lblNumberPhones = new System.Windows.Forms.Label();
             this.cboNumberPhones = new System.Windows.Forms.ComboBox();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.grpSelectModel.SuspendLayout();
             this.grpSelectPackage.SuspendLayout();
             this.grpSelectOptions.SuspendLayout();
@@ -87,6 +89,7 @@
             this.rdoModel200.TabIndex = 2;
             this.rdoModel200.TabStop = true;
             this.rdoModel200.Text = "Model 200";
+            this.toolTip1.SetToolTip(this.rdoModel200, "Model 200");
             this.rdoModel200.UseVisualStyleBackColor = true;
             // 
             // rdoModel110
@@ -97,6 +100,7 @@
             this.rdoModel110.Size = new System.Drawing.Size(80, 19);
             this.rdoModel110.TabIndex = 1;
             this.rdoModel110.Text = "Model 110";
+            this.toolTip1.SetToolTip(this.rdoModel110, "Model 110");
             this.rdoModel110.UseVisualStyleBackColor = true;
             // 
             // rdoModel100
@@ -107,6 +111,7 @@
             this.rdoModel100.Size = new System.Drawing.Size(80, 19);
             this.rdoModel100.TabIndex = 0;
             this.rdoModel100.Text = "Model 100";
+            this.toolTip1.SetToolTip(this.rdoModel100, "Model 100");
             this.rdoModel100.UseVisualStyleBackColor = true;
             // 
             // grpSelectPackage
@@ -130,6 +135,7 @@
             this.rdoUnlimited.TabIndex = 2;
             this.rdoUnlimited.TabStop = true;
             this.rdoUnlimited.Text = "Unlimited Minutes";
+            this.toolTip1.SetToolTip(this.rdoUnlimited, "Unlimited minutes");
             this.rdoUnlimited.UseVisualStyleBackColor = true;
             // 
             // rdo1500Minutes
@@ -142,6 +148,7 @@
             this.rdo1500Minutes.TabIndex = 1;
             this.rdo1500Minutes.TabStop = true;
             this.rdo1500Minutes.Text = "1500 Minutes/Month";
+            this.toolTip1.SetToolTip(this.rdo1500Minutes, "1500 minutes per month");
             this.rdo1500Minutes.UseVisualStyleBackColor = true;
             // 
             // rdo800Minutes
@@ -152,6 +159,7 @@
             this.rdo800Minutes.Size = new System.Drawing.Size(130, 19);
             this.rdo800Minutes.TabIndex = 0;
             this.rdo800Minutes.Text = "800 Minutes/Month";
+            this.toolTip1.SetToolTip(this.rdo800Minutes, "800 minutes per month");
             this.rdo800Minutes.UseVisualStyleBackColor = true;
             // 
             // grpSelectOptions
@@ -175,6 +183,7 @@
             this.chkTextMessaging.Size = new System.Drawing.Size(107, 19);
             this.chkTextMessaging.TabIndex = 1;
             this.chkTextMessaging.Text = "Text Messaging";
+            this.toolTip1.SetToolTip(this.chkTextMessaging, "Text Messaging");
             this.chkTextMessaging.UseVisualStyleBackColor = true;
             // 
             // chkEmail
@@ -187,6 +196,7 @@
             this.chkEmail.Size = new System.Drawing.Size(55, 19);
             this.chkEmail.TabIndex = 0;
             this.chkEmail.Text = "Email";
+            this.toolTip1.SetToolTip(this.chkEmail, "Email");
             this.chkEmail.UseVisualStyleBackColor = true;
             // 
             // grpTotals
@@ -218,6 +228,7 @@
             this.txtTotalMonthlyCharge.Size = new System.Drawing.Size(100, 23);
             this.txtTotalMonthlyCharge.TabIndex = 11;
             this.txtTotalMonthlyCharge.TabStop = false;
+            this.toolTip1.SetToolTip(this.txtTotalMonthlyCharge, "Monthly charge");
             // 
             // lblTotalMonthlyCharge
             // 
@@ -237,6 +248,7 @@
             this.txtPackageCharge.Size = new System.Drawing.Size(100, 23);
             this.txtPackageCharge.TabIndex = 9;
             this.txtPackageCharge.TabStop = false;
+            this.toolTip1.SetToolTip(this.txtPackageCharge, "Package charge");
             // 
             // lblPackageCharge
             // 
@@ -256,6 +268,7 @@
             this.txtOptions.Size = new System.Drawing.Size(100, 23);
             this.txtOptions.TabIndex = 7;
             this.txtOptions.TabStop = false;
+            this.toolTip1.SetToolTip(this.txtOptions, "Options charge");
             // 
             // lblOptions
             // 
@@ -275,6 +288,7 @@
             this.txtPhoneTotal.Size = new System.Drawing.Size(100, 23);
             this.txtPhoneTotal.TabIndex = 5;
             this.txtPhoneTotal.TabStop = false;
+            this.toolTip1.SetToolTip(this.txtPhoneTotal, "Total");
             // 
             // lblPhoneTotal
             // 
@@ -294,6 +308,7 @@
             this.txtTax.Size = new System.Drawing.Size(100, 23);
             this.txtTax.TabIndex = 3;
             this.txtTax.TabStop = false;
+            this.toolTip1.SetToolTip(this.txtTax, "Tax");
             // 
             // lblTax
             // 
@@ -313,6 +328,7 @@
             this.txtPhoneSubtotal.Size = new System.Drawing.Size(100, 23);
             this.txtPhoneSubtotal.TabIndex = 1;
             this.txtPhoneSubtotal.TabStop = false;
+            this.toolTip1.SetToolTip(this.txtPhoneSubtotal, "Subtotal");
             // 
             // lblPhoneSubtotal
             // 
@@ -341,6 +357,7 @@
             this.btnViewTotals.Size = new System.Drawing.Size(75, 23);
             this.btnViewTotals.TabIndex = 5;
             this.btnViewTotals.Text = "View Totals";
+            this.toolTip1.SetToolTip(this.btnViewTotals, "View totals");
             this.btnViewTotals.UseVisualStyleBackColor = true;
             this.btnViewTotals.Click += new System.EventHandler(this.btnViewTotals_Click);
             // 
@@ -351,6 +368,7 @@
             this.btnClose.Size = new System.Drawing.Size(75, 23);
             this.btnClose.TabIndex = 6;
             this.btnClose.Text = "Close";
+            this.toolTip1.SetToolTip(this.btnClose, "Close the Family Plan window");
             this.btnClose.UseVisualStyleBackColor = true;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
@@ -380,6 +398,7 @@
             this.cboNumberPhones.Name = "cboNumberPhones";
             this.cboNumberPhones.Size = new System.Drawing.Size(43, 23);
             this.cboNumberPhones.TabIndex = 7;
+            this.toolTip1.SetToolTip(this.cboNumberPhones, "Number of Phones");
             this.cboNumberPhones.SelectedIndexChanged += new System.EventHandler(this.inputChanged);
             this.cboNumberPhones.DropDownStyleChanged += new System.EventHandler(this.inputChanged);
             this.cboNumberPhones.ContextMenuStripChanged += new System.EventHandler(this.inputChanged);
@@ -449,5 +468,6 @@
         private Button btnClose;
         private Label lblNumberPhones;
         private ComboBox cboNumberPhones;
+        private ToolTip toolTip1;
     }
 }

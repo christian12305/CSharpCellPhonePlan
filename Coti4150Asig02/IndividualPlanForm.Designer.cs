@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(IndividualPlanForm));
             this.grpSelectModel = new System.Windows.Forms.GroupBox();
             this.rdoModel200 = new System.Windows.Forms.RadioButton();
@@ -56,6 +57,7 @@
             this.picIndividual = new System.Windows.Forms.PictureBox();
             this.btnViewTotals = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.grpSelectModel.SuspendLayout();
             this.grpSelectPackage.SuspendLayout();
             this.grpSelectOptions.SuspendLayout();
@@ -85,6 +87,7 @@
             this.rdoModel200.TabIndex = 2;
             this.rdoModel200.TabStop = true;
             this.rdoModel200.Text = "Model 200";
+            this.toolTip1.SetToolTip(this.rdoModel200, "Model 200");
             this.rdoModel200.UseVisualStyleBackColor = true;
             this.rdoModel200.CheckedChanged += new System.EventHandler(this.inputChanged);
             // 
@@ -96,6 +99,7 @@
             this.rdoModel110.Size = new System.Drawing.Size(80, 19);
             this.rdoModel110.TabIndex = 1;
             this.rdoModel110.Text = "Model 110";
+            this.toolTip1.SetToolTip(this.rdoModel110, "Model 110");
             this.rdoModel110.UseVisualStyleBackColor = true;
             this.rdoModel110.CheckedChanged += new System.EventHandler(this.inputChanged);
             // 
@@ -107,6 +111,7 @@
             this.rdoModel100.Size = new System.Drawing.Size(80, 19);
             this.rdoModel100.TabIndex = 0;
             this.rdoModel100.Text = "Model 100";
+            this.toolTip1.SetToolTip(this.rdoModel100, "Model 100");
             this.rdoModel100.UseVisualStyleBackColor = true;
             this.rdoModel100.CheckedChanged += new System.EventHandler(this.inputChanged);
             // 
@@ -131,6 +136,7 @@
             this.rdoUnlimited.TabIndex = 2;
             this.rdoUnlimited.TabStop = true;
             this.rdoUnlimited.Text = "Unlimited Minutes";
+            this.toolTip1.SetToolTip(this.rdoUnlimited, "Unlimited Minutes ");
             this.rdoUnlimited.UseVisualStyleBackColor = true;
             this.rdoUnlimited.CheckedChanged += new System.EventHandler(this.inputChanged);
             // 
@@ -144,6 +150,7 @@
             this.rdo1500Minutes.TabIndex = 1;
             this.rdo1500Minutes.TabStop = true;
             this.rdo1500Minutes.Text = "1500 Minutes/Month";
+            this.toolTip1.SetToolTip(this.rdo1500Minutes, "1500 minutes per month");
             this.rdo1500Minutes.UseVisualStyleBackColor = true;
             this.rdo1500Minutes.CheckedChanged += new System.EventHandler(this.inputChanged);
             // 
@@ -155,6 +162,7 @@
             this.rdo800Minutes.Size = new System.Drawing.Size(130, 19);
             this.rdo800Minutes.TabIndex = 0;
             this.rdo800Minutes.Text = "800 Minutes/Month";
+            this.toolTip1.SetToolTip(this.rdo800Minutes, "800 minutes per month");
             this.rdo800Minutes.UseVisualStyleBackColor = true;
             this.rdo800Minutes.CheckedChanged += new System.EventHandler(this.inputChanged);
             // 
@@ -179,6 +187,7 @@
             this.chkTextMessaging.Size = new System.Drawing.Size(107, 19);
             this.chkTextMessaging.TabIndex = 1;
             this.chkTextMessaging.Text = "Text Messaging";
+            this.toolTip1.SetToolTip(this.chkTextMessaging, "Text Messaging");
             this.chkTextMessaging.UseVisualStyleBackColor = true;
             this.chkTextMessaging.CheckedChanged += new System.EventHandler(this.inputChanged);
             // 
@@ -192,6 +201,7 @@
             this.chkEmail.Size = new System.Drawing.Size(55, 19);
             this.chkEmail.TabIndex = 0;
             this.chkEmail.Text = "Email";
+            this.toolTip1.SetToolTip(this.chkEmail, "Email");
             this.chkEmail.UseVisualStyleBackColor = true;
             this.chkEmail.CheckedChanged += new System.EventHandler(this.inputChanged);
             // 
@@ -224,6 +234,7 @@
             this.txtTotalMonthlyCharge.Size = new System.Drawing.Size(100, 23);
             this.txtTotalMonthlyCharge.TabIndex = 11;
             this.txtTotalMonthlyCharge.TabStop = false;
+            this.toolTip1.SetToolTip(this.txtTotalMonthlyCharge, "Monthly charge");
             // 
             // lblTotalMonthlyCharge
             // 
@@ -243,6 +254,7 @@
             this.txtPackageCharge.Size = new System.Drawing.Size(100, 23);
             this.txtPackageCharge.TabIndex = 9;
             this.txtPackageCharge.TabStop = false;
+            this.toolTip1.SetToolTip(this.txtPackageCharge, "Package charge");
             // 
             // lblPackageCharge
             // 
@@ -262,6 +274,7 @@
             this.txtOptions.Size = new System.Drawing.Size(100, 23);
             this.txtOptions.TabIndex = 7;
             this.txtOptions.TabStop = false;
+            this.toolTip1.SetToolTip(this.txtOptions, "Options charge");
             // 
             // lblOptions
             // 
@@ -281,6 +294,7 @@
             this.txtPhoneTotal.Size = new System.Drawing.Size(100, 23);
             this.txtPhoneTotal.TabIndex = 5;
             this.txtPhoneTotal.TabStop = false;
+            this.toolTip1.SetToolTip(this.txtPhoneTotal, "Total");
             // 
             // lblPhoneTotal
             // 
@@ -300,6 +314,7 @@
             this.txtTax.Size = new System.Drawing.Size(100, 23);
             this.txtTax.TabIndex = 3;
             this.txtTax.TabStop = false;
+            this.toolTip1.SetToolTip(this.txtTax, "Tax");
             // 
             // lblTax
             // 
@@ -319,6 +334,7 @@
             this.txtPhoneSubtotal.Size = new System.Drawing.Size(100, 23);
             this.txtPhoneSubtotal.TabIndex = 1;
             this.txtPhoneSubtotal.TabStop = false;
+            this.toolTip1.SetToolTip(this.txtPhoneSubtotal, "Subtotal");
             // 
             // lblPhoneSubtotal
             // 
@@ -347,6 +363,7 @@
             this.btnViewTotals.Size = new System.Drawing.Size(75, 23);
             this.btnViewTotals.TabIndex = 5;
             this.btnViewTotals.Text = "View Totals";
+            this.toolTip1.SetToolTip(this.btnViewTotals, "View Totals");
             this.btnViewTotals.UseVisualStyleBackColor = true;
             this.btnViewTotals.Click += new System.EventHandler(this.btnViewTotals_Click);
             // 
@@ -357,6 +374,7 @@
             this.btnClose.Size = new System.Drawing.Size(75, 23);
             this.btnClose.TabIndex = 6;
             this.btnClose.Text = "Close";
+            this.toolTip1.SetToolTip(this.btnClose, "Close the Individual Plan window");
             this.btnClose.UseVisualStyleBackColor = true;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
@@ -419,5 +437,6 @@
         private PictureBox picIndividual;
         private Button btnViewTotals;
         private Button btnClose;
+        private ToolTip toolTip1;
     }
 }

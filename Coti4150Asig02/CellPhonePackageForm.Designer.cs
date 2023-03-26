@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CellPhonePackageForm));
             this.grpSelectPlan = new System.Windows.Forms.GroupBox();
             this.picFamily = new System.Windows.Forms.PictureBox();
@@ -38,6 +39,7 @@
             this.lblIndividual = new System.Windows.Forms.Label();
             this.picCellPhone = new System.Windows.Forms.PictureBox();
             this.btnExit = new System.Windows.Forms.Button();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.grpSelectPlan.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picFamily)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picIndividual)).BeginInit();
@@ -77,6 +79,7 @@
             this.btnFamily.TabIndex = 4;
             this.btnFamily.Text = "&Family";
             this.btnFamily.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip1.SetToolTip(this.btnFamily, "Choose a Family Plan");
             this.btnFamily.UseVisualStyleBackColor = true;
             this.btnFamily.Click += new System.EventHandler(this.btnFamily_Click);
             // 
@@ -109,6 +112,7 @@
             this.btnIndividual.TabIndex = 1;
             this.btnIndividual.Text = "&Individual";
             this.btnIndividual.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip1.SetToolTip(this.btnIndividual, "Choose an Individual Plan");
             this.btnIndividual.UseVisualStyleBackColor = true;
             this.btnIndividual.Click += new System.EventHandler(this.btnIndividual_Click);
             // 
@@ -141,6 +145,7 @@
             this.btnExit.TabIndex = 2;
             this.btnExit.Text = "E&xit";
             this.btnExit.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip1.SetToolTip(this.btnExit, "Exit the application");
             this.btnExit.UseVisualStyleBackColor = true;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
@@ -156,6 +161,7 @@
             this.Name = "CellPhonePackageForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cell Phone Packages";
+            this.toolTip1.SetToolTip(this, "Cell Phone Package Form");
             this.grpSelectPlan.ResumeLayout(false);
             this.grpSelectPlan.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picFamily)).EndInit();
@@ -176,5 +182,6 @@
         private Label lblIndividual;
         private PictureBox picCellPhone;
         private Button btnExit;
+        private ToolTip toolTip1;
     }
 }
